@@ -1,0 +1,9 @@
+application:
+  name: pure-eagle-purrfectly-zen-astro
+  pods:
+    - name: app
+      image: "# filled by pipeline"
+      path: /
+      servicePorts:
+        - 4321
+      vars: {}
