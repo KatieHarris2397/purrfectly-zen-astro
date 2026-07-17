@@ -1,0 +1,9 @@
+application:
+  name: pure-eagle-purrfectly-zen-astro
+  pods:
+    - name: app
+      image: "registry.nexlayer.io/user_01kna6j8vrcfj9q0wjtq5qsq3n/purrfectly-zen-astro:19f709eb6ab"
+      path: /
+      servicePorts:
+        - 4321
+      vars: {}
