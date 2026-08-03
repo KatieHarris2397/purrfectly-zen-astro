@@ -1,0 +1,15 @@
+application:
+  name: purrfectly-zen-astro
+  pods:
+    - name: app
+      image: "registry.nexlayer.io/user_01krc1n44dd49btzyv6vht92v2/purrfectly-zen-astro:19fc928677a"
+      path: /
+      servicePorts:
+        - 3000
+      vars:
+        REDIS_URL: "redis://redis.pod:6379"
+    - name: redis
+      image: mirror.gcr.io/library/redis:7-alpine
+      servicePorts:
+        - 6379
+      vars: {}
