@@ -1,0 +1,9 @@
+application:
+  name: purrfectly-zen-astro
+  pods:
+    - name: app
+      image: "registry.nexlayer.io/user_01krc1n44dd49btzyv6vht92v2/purrfectly-zen-astro:19fcdc954bb"
+      path: /
+      servicePorts:
+        - 80
+      vars: {}
